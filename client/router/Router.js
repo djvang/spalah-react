@@ -4,13 +4,17 @@ import { Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 import History from '../history';
 
-
-import Course from 'Modules/course/routers';
+import Layout from '../common/layout';
+import Course from 'Modules/course/routes';
+import School from 'Modules/school/routes';
 
 export default (
     <ConnectedRouter history={ History }>
         <Switch>
-            { Course }
+            <Layout>
+                { Course }
+                { School }
+            </Layout>
         </Switch>
     </ConnectedRouter>
 );

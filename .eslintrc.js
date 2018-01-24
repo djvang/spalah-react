@@ -46,6 +46,7 @@ module.exports = {
         "jsx-quotes": ["warn", "prefer-double"],
         "no-multi-spaces": ["warn"],
         "no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 1 }],
-        "no-extra-semi": ["warn"]
+        "no-extra-semi": ["warn"],
+        "react/prop-types": 1,
     }
 };
